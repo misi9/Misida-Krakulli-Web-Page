@@ -1,6 +1,6 @@
 let currentSlide = 0;
 const images = [
-    'Carousel/images/image1.jpg',
+    '/javascript-projects/Carousel/images/image1.jpg',
     '/javascript-projects/Carousel/images/image2.jpg',
     '/javascript-projects/Carousel/images/image3.jpg',
     '/javascript-projects/Carousel/images/image4.jpg'
