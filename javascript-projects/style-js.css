@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7F8080;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.25rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+
+  .titles {
+    color: rgb(161, 131, 181);
+    padding: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+  .titles:hover {
+    transform: scale(1.1); 
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: auto;
+    gap: 1rem;
+    margin: 0.2rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33%);
+    max-width: 18rem;
+    height: calc(33%);
+    max-height: 30rem;
+     margin: 0 auto;
+     background-color: #f0ece2;
+     border-radius: 2rem;
+     overflow: hidden;
+     box-shadow: 5px 5px 12px #8109b7;
+    }
+
+    .card figure {
+        width: 100%; 
+        aspect-ratio: 5 / 4; 
+        margin: 0;
+        object-fit: cover; 
+        overflow: hidden;
+      }
+      
+      .card img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+      }
+      
+      
+      .card-body {
+        padding: 1rem;
+      }
+      
+      p {
+        font-size: 1.375rem;
+        padding-top: 1rem;
+        
+      }
+      
+      h5 {
+        
+        border-bottom: dotted 1px;
+        
+      }
+      h5 a{
+        font-size: 1.375rem;
+        color: #8109b7;
+        text-decoration: none;
+      }

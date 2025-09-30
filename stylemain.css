@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7F8080;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.25rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #daf4f5;
+   margin: 0 auto;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    width: 81.25rem; 
+    background-color: #f1f3f9;
+    border-radius: 0.313;
+    position: sticky;
+    top: 0;
+    opacity: 0.87;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 80%;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-size: 1.375rem;
+  }
+
+a:hover {
+    filter: drop-shadow(0.313rem 0.313rem 0.313rem rgba(0,0,0,0.3));
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    min-height: 50rem;
+    width: 81.25rem;
+    border-top: 0.125rem solid rgb(99, 99, 99);
+    font-size: 2rem;
+    background-color: #dfcdc3;
+}
+.titles {
+  color: rgb(161, 131, 181);
+  padding: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.titles:hover {
+  transform: scale(1.1); 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: auto;
+  gap: 1rem;
+  margin: 0.2rem;
+}
+
+.col {
+  flex: 1 1 calc(30%);
+  height: calc(33%);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.col:hover {
+  transform: scale(1.08);
+}
+
+.home {
+    display: flex;
+    font-size: 2.813rem;
+    height: 100vh;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gif {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 50%;
+}
+.presentation {
+    margin-bottom: 0.625rem;
+}
+
+
+.card {
+display: flex;
+flex-direction: column;
+flex: 1 1 calc(33%);
+max-width: 18rem;
+height: calc(33%);
+max-height: 30rem;
+ margin: 0 auto;
+ background-color: #f0ece2;
+ border-radius: 2rem;
+ overflow: hidden;
+}
+
+.card figure {
+  width: 100%; 
+  aspect-ratio: 5 / 4; 
+  margin: 0;
+  object-fit: cover; 
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+
+.card-body {
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.375rem;
+  padding-top: 1rem;
+  
+}
+
+h5 {
+  
+  border-bottom: dotted 1px;
+  
+}
+h5 a{
+  font-size: 1.375rem;
+  color: #8109b7;
+}
+
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 25rem;
+  width: 100%;
+  text-align: center;
+  border-top: 0.30rem solid white;
+}
+
+footer li {
+  font-size: 1.375rem;
+  margin: 2rem;
+  list-style-type: none;
+}
+
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+blockquote {
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.logos {
+  border-radius: 1.2rem;
+}
+
+
+/* Responsive design*/
+
+/* Per dispositivi extra small (smartphone, sotto i 600px) */
+@media only screen and (max-width: 500px) {
+  .container > * {
+    width: 25%;
+  }
+  .header {
+    display: none;
+  }
+  p {
+    display: none;
+  }
+
+
+  }
+  
+  /* Per dispositivi piccoli (tablet portrait e telefoni larghi) */
+  @media only screen and (max-width: 600px) {
+    .container > * {
+      width: 30%;
+     
+    }
+
+    
+
+    li {
+      margin: 1rem;
+    }
+
+    footer ul {
+      flex-direction: column;
+    }
+
+    blockquote {
+      display: none;
+    }
+    .contacts {
+      display: none;
+    }
+   
+   
+  }
+  
+  /* Per dispositivi medi (tablet landscape e piccoli desktop) */
+  @media only screen and (max-width: 768px) {
+    .container > * {
+      width: 40%;
+    }
+
+    .presentation {
+      font-size: 60%;
+    }
+    li {
+      margin: 1rem;
+    }
+    
+  }
+  
+  /* Per dispositivi larghi (desktop e laptop) */
+  @media only screen and (max-width: 992px) {
+    .container > * {
+      width: 80%;
+      
+    }
+    
+    
+
+  }
+  
+  /* Per dispositivi extra large (laptop grandi e desktop) */
+  @media only screen and (max-width: 1200px) {
+   .container > * {
+     width: 80%;
+   }
+   
+  }
+  
