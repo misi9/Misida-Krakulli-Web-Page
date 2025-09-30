@@ -2,8 +2,8 @@ let currentSlide = 0;
 const images = [
     'images/image1.jpg',
     'images/image2.jpg',
-    '/javascript-projects/Carousel/images/image3.jpg',
-    '/javascript-projects/Carousel/images/image4.jpg'
+    'images/image3.jpg',
+    'images/image4.jpg'
 ];
 
 // Get the image element
